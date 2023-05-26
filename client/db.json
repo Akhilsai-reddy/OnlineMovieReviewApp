@@ -1,0 +1,58 @@
+{
+    "movies":[
+        {
+            "id":1,
+            "src":"https://www.themoviedb.org/t/p/w533_and_h300_bestv2/i0Y0wP8H6SRgjr6QmuwbtQbS24D.jpg",
+            "movieName":"RRR",
+            "Director":"SS Rajamouli",
+            "details":"",
+            "reviews":[],
+            "Rating":5
+        },
+        {
+            "id":2,
+            "src":"https://www.themoviedb.org/t/p/w600_and_h900_bestv2/cBFQsU1LDBEOl0Ik0cygeB6wCLE.jpg",
+            "movieName":"APOCALYPTO",
+            "Director":"Mel Gibson",
+            "details":"",
+            "reviews":[],
+            "Rating":4
+        },
+        {
+            "id":3,
+            "src":"https://www.themoviedb.org/t/p/w600_and_h900_bestv2/t6HIqrRAclMCA60NsSmeqe9RmNV.jpg",
+            "movieName":"AVATAR THE WAY OF WATER",
+            "Director":"James Camaron",
+            "details":"",
+            "reviews":[],
+            "Rating":3.5
+        },
+        {
+            "id":4,
+            "src":"https://www.themoviedb.org/t/p/w600_and_h900_bestv2/wJG5FeCzwLmSKkClWYRymKpG9KJ.jpg",
+            "movieName":"Starnger Things 4",
+            "Director":"Duffer brothers",
+            "details":"",
+            "reviews":[],
+            "Rating":4.5
+        },
+        {
+            "id":5,
+            "src":"https://www.themoviedb.org/t/p/w600_and_h900_bestv2/jxopEOrF2oIOQxsuvjdmgANqDOU.jpg",
+            "movieName":"KGF",
+            "Director":"Prashanth neel",
+            "details":"",
+            "reviews":[],
+            "Rating":4
+        },
+        {
+            "id":6,
+            "src":"https://www.themoviedb.org/t/p/w600_and_h900_bestv2/uLDkryO7vFQBEcR7DeToToWezDM.jpg",
+            "movieName":"Wednesday",
+            "Director":"",
+            "details":"",
+            "reviews":[],
+            "Rating":4
+        }
+    ]
+}
