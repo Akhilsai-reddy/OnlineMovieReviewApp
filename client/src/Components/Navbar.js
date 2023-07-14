@@ -1,5 +1,5 @@
 import { useContext, useState } from "react";
-import { Form } from "react-bootstrap";
+import {  Form } from "react-bootstrap";
 import { useDispatch, useSelector } from "react-redux";
 import { NavLink, useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
@@ -48,8 +48,8 @@ const Navbar = () => {
 
   return (
     <nav
-      className="navbar  navbar-expand-lg navbar-blue bg-dark text-info sticky-top"
-      style={{ boxShadow: "10px 12px 18px -6px blue" }}
+      className="navbar  navbar-expand-lg navbar-light bg-light text-info shadow sticky-top"
+      // style={{ boxShadow: "10px 12px 18px -6px blue" }}
     >
       <div className="container-fluid">
         <button
@@ -67,19 +67,22 @@ const Navbar = () => {
         <div className="collapse navbar-collapse" id="navbarTogglerDemo02">
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
             <li className="nav-item">
-              <NavLink to="/" className="nav-link text-info ">
+              <NavLink to="/" className="nav-link text-dark ">
                 <h2>
-                  <b>Movie Review</b>
+                  <img src={`https://img.favpng.com/9/23/19/movie-logo-png-favpng-nRr1DmYq3SNYSLN8571CHQTEG.jpg`} alt="kk" height='60'/>
+                 <b> <sub>Movie Review</sub></b> 
                 </h2>
               </NavLink>
             </li>
-            <li className="nav-item  px-5 py-3">
+            <li className="nav-item  px-5 py-4">
               <Form.Control
                 type="search"
                 placeholder="search movie here"
+
                 style={{
                   width: "20rem",
-                  boxShadow: "10px 12px 18px -6px blue",
+                  
+                  // boxShadow: "10px 12px 18px -6px black",
                 }}
                 value={searchQuery}
                 onChange={(e) => searchHandler(e)}
@@ -119,24 +122,24 @@ const Navbar = () => {
           </ul>
           <form className="d-flex">
             {user ? (
-              <b>
+              <>
                 <NavLink
-                  className="text-info"
+                  className="text-info px-4"
                   style={{ textDecoration: "none" }}
                   to={`/${name}`}
                 >
-                  <i className="bi bi-person-circle" /> welcome {name}
+                  <button  className="btn btn-outline-info shadow "> <i className="bi bi-person-circle" /> {name}</button> 
                 </NavLink>
                 &nbsp;
                 <button
-                  className="btn btn-outline-danger btn-sm "
+                  className="btn btn-outline-danger btn-sm shadow "
                   onClick={(e) => logout(e)}
                 >
                   log out?
                 </button>
-              </b>
+              </>
             ) : (
-              <NavLink to="/login" className="nav-link text-info">
+              <NavLink to="/login" className="nav-link text-info shadow">
                 <b>LOGIN</b>
               </NavLink>
             )}

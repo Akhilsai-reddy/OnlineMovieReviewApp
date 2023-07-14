@@ -116,12 +116,12 @@ const handleDeleteReview=async(e,id)=>{
       <br/>
 
       {reviews.map((review, index) => (
-        <Card c key={index}  style={{ padding:'1%', borderRadius:'12px',borderColor:'Highlight',boxShadow:'10px 12px 18px -6px yellow',backgroundColor:'transparent'}}>
+        <Card className="bg-light" key={index}  style={{ padding:'1%', borderRadius:'12px',borderColor:'Highlight',boxShadow:'10px 12px 18px -6px yellow'}}>
           <div style={{ display: "flex", justifyContent: "space-between" }}>
             <h4 className="text-info">
               {review.userName}
             </h4>
-         { ((user?.FirstName==="Admin")||(user?._id===review.userId))&& <i className="bi bi-trash text-white " style={{cursor:'pointer'}} onClick={(e)=>handleDeleteReview(e,review.id)} />}
+         { ((user?.FirstName==="Admin")||(user?._id===review.userId))&& <i className="bi bi-trash text-danger " style={{cursor:'pointer'}} onClick={(e)=>handleDeleteReview(e,review.id)} />}
           </div>
           <ReactStars
             count={5}
@@ -131,7 +131,7 @@ const handleDeleteReview=async(e,id)=>{
             edit={false}
             color2={"#ffd700"}
           />
-          <div className="text-white" style={{ display: "flex", justifyContent: "space-between" }}>
+          <div style={{ display: "flex", justifyContent: "space-between" }}>
           {review.review}
            <div className="text-primary">{review.reviewDate}</div>
            </div>

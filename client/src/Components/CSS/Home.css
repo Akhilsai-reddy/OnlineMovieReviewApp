@@ -2,7 +2,10 @@
   display: grid;
   justify-content: space-between;
   grid-template-columns: repeat(auto-fit,minmax(250px, 1fr));
-  gap: 12px;
+  gap: 20px;
+  /* display: flex;
+  flex-wrap: wrap;
+  gap: 30px; */
 }
 
 

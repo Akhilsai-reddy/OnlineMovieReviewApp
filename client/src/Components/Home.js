@@ -26,17 +26,17 @@ const Home = () => {
         {movies.length>0? (<div className="movieList">
            {(user&&user.FirstName==="Admin")&&<Card className="text-center" style={{backgroundColor:'gainsboro'}}>
             {/* <Card.Title className="bg-warning">Add Movie</Card.Title> */}
-         <h1 className=" text-primary mt-5 py-5" ><Link to='/movie/add' > <i className="bi bi-plus-circle"></i><br/>Add  new</Link></h1>
+         <h1 className="text-primary mt-5 py-5" ><Link to='/movie/add' > <i className="bi bi-plus-circle"></i><br/></Link></h1>
           </Card>}
   
         { movies.map((movie, index) => (
-            <Card key={index} className="text-center bg-dark" border="info" style={{boxShadow:'10px 12px 18px -6px blue'}}>
+            <Card key={index} className="text" border="info"  style={{boxShadow:'10px 12px 18px -6px black'}}>
               <Link to={'/movie/'+movie._id}>
               <Card.Img
                 src={movie.src}
                 style={{ width: "100%", height: "14rem" }}
               /> </Link>
-               <Card.Title className="text-white">{movie.movieName}</Card.Title>
+               <Card.Title className="px-3 py-2">{movie.movieName}</Card.Title>
               <Card.Footer >
                 <ReactStars
                   count={5}
