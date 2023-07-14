@@ -18,7 +18,7 @@ const LoginForm = (props) => {
       {isAdmin ? (
         <AdminLoginForm isAdmin={isAdmin} setIsAdmin={setIsAdmin} />
       ) : (
-        <Container className="text-center text-white mt-5">
+        <Container className="text-center mt-5">
           <Row>
             <Col />
             <Card
